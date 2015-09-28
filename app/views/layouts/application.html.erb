@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Recipies</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <header class="navbar navbar-fixed-top navbar-default">
+    <div class="container">
+      <%= link_to 'My Recipies', "" , class: "btn btn-lg btn-success", :id => "logo"%>
+      <br>
+     <%= render "layouts/header" %>
+    </div>
+    
+  </header>
+  
+<div class="fluid-container"><%= yield %></div>
+ <%= render "layouts/footer" %>
+</body>
+</html>
